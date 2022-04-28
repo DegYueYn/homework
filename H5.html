@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<htm lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+<!--
+    <fieldset>
+      <legend>登录</legend>
+      名称：<input type="text" placeholder="请输入用户名"><br>
+      密码：<input type="password"><br>
+      邮箱：<input type="email" name="email"><br>
+      电话：<input type="tel"><br>
+      网址：<input type="url"><br>
+      喜欢的数字：<input type="number" step="1" min="0" max="9"><br>
+      搜索框：<input type="search"><br>
+      出生日期：<input type="date"><br>
+      出生日期：<input type="month"><br>
+      第几周：<input type="week"><br>
+      进度：<input type="range"><br>
+      颜色：<input type="color"><br>
+
+      输入：<input type="text" list="list">
+      <datalist id="list">
+        <option value="www.1.con">1</option>
+        <option value="www.2.con">2</option>
+        <option value="www.3.con">3</option>
+      </datalist>
+      提交：<input type="submit"><br >
+    </fieldset> -->
+
+
+    <!-- <video autoplay controls>
+
+      <source src="./3.mp4" type="video/mp4"></source>
+      <source src="./3.mp4" type="video/ogg"></source>
+      <source src="./3.mp4" type="video/avi"></source>
+    </video> -->
+    <audio src="./陈奕迅-孤勇者.mp3" controls autoplay ></audio>
+    <button>播放</button>
+
+</body>
+</htm l>
+<script src="./jquery.js"></script>
+
+<script>
+  $('button').click(function(){
+    if($(this).text()==='播放'){
+    $('audio')[0].play();
+    $(this).text('暂停')
+  }else{
+    $('audio')[0].pause();
+    $(this).text('播放')
+  }
+
+  })
+
+
+
+</script>
